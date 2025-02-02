@@ -1,7 +1,5 @@
-import IconImage from "@/components/common/image/IconImage";
 import Content from "@/components/common/message/Content";
 import Title from "@/components/common/message/Title";
-import Image from "next/image";
 import React from "react";
 import AccountInfo from "./AccountInfo";
 import {
