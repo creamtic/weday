@@ -7,6 +7,7 @@ import { useState } from "react";
 import {
   BRIDE_FATHER_MOBILE,
   BRIDE_MOTHER_MOBILE,
+  CUTE_FONT,
   GROOM_FATHER_MOBILE,
   GROOM_MOTHER_MOBILE,
 } from "@/constants/constant";
@@ -139,6 +140,7 @@ export default function Invitation() {
           <button
             onClick={() => setIsModalOpen(false)}
             className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[60px] h-[35px] bg-[rgba(145,130,130,0.7)] rounded-full text-[13px] text-white border-0 flex items-center justify-center cursor-pointer z-2 hover:bg-white hover:text-black"
+            style={{ fontFamily: `${CUTE_FONT}`, fontSize: "1rem" }}
           >
             닫기
           </button>

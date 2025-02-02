@@ -8,6 +8,7 @@ import Calendar from "@/components/invite/calendar/Calendar";
 import Map from "@/components/invite/map/Map";
 import PhotoGallery from "@/components/invite/photoGallery/PhotoGallery";
 import Title from "@/components/common/message/Title";
+import Maeum from "@/components/invite/maeum/Maeum";
 
 export default function InvitationPage() {
   const modulesRef = useRef<HTMLDivElement[]>([]);
@@ -147,7 +148,15 @@ export default function InvitationPage() {
           ]}
         />
       </div>
-      <div className=" pb-20" />
+      <div
+        className="fade"
+        ref={(el) => {
+          if (el) modulesRef.current.push(el);
+        }}
+      >
+        <Title message="마음 전해주실 곳" />
+        <Maeum />
+      </div>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import Modal from "react-modal";
 import InfinityFilm from "../../common/infinityFilm/InfinityFilm";
 import { styled } from "styled-components";
 import useEmblaCarousel from "embla-carousel-react";
+import { CUTE_FONT } from "@/constants/constant";
 
 const customStyles = {
   content: {
@@ -131,7 +132,9 @@ function PhotoGallery({ images = [] }: PhotoGalleryProps) {
             ))}
           </DotNav>
 
-          <CloseButton onClick={closeModal}>닫기</CloseButton>
+          <CloseButton onClick={closeModal} style={{ fontFamily: `${CUTE_FONT}`, fontSize: "1rem" }}>
+            닫기
+          </CloseButton>
         </div>
       </Modal>
     </>
