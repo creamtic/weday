@@ -1,7 +1,6 @@
 import React from "react";
 import StartDay from "./StartDay";
 import WeddingDay from "./WeddingDay";
-import RectangleImage from "../common/image/RectangeImage";
 import RoundedImage from "../common/image/RoundedImage";
 
 const Dday = () => {
