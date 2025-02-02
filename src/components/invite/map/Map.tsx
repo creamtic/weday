@@ -6,6 +6,7 @@ const WEDDING_LOCATION_COORDINATE = { lat: 35.824482, lng: 128.619791 };
 export default function KakaoMap() {
   useEffect(() => {
     const script = document.createElement("script");
+    console.log(KAKAO_MAP_API_KEY);
     script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${KAKAO_MAP_API_KEY}&autoload=false`;
     script.async = true;
     document.head.appendChild(script);

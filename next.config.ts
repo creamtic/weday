@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     domains: ["drive.google.com", "drive.usercontent.google.com"],
   },
+  // TODO: REMOVE this ignore code
   typescript: {
     ignoreBuildErrors: true,
   },
