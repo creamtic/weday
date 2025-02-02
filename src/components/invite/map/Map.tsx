@@ -1,7 +1,8 @@
-import { KAKAO_MAP_API_KEY, WEDDING_LOCATION_COORDINATE } from "@/constants/constant";
+import { CUTE_FONT, DEFAULT_FONT, KAKAO_MAP_API_KEY, WEDDING_LOCATION_COORDINATE } from "@/constants/constant";
 import React, { useEffect } from "react";
 import Navi from "./Navi";
 import Location from "./Location";
+import Title from "@/components/common/message/Title";
 
 export default function KakaoMap() {
   useEffect(() => {
@@ -38,7 +39,7 @@ export default function KakaoMap() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center py-5">
+    <div className="flex flex-col justify-center items-center py-5 text-xl" style={{ fontFamily: `${CUTE_FONT}` }}>
       <div id="map" className="w-[360px] h-[300px]" />
       <Navi />
       <Location />

@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
-import { Yeon_Sung } from "next/font/google";
+import { Yeon_Sung, Dongle } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 
-const noto = Yeon_Sung({
+const yeonSung = Yeon_Sung({
   subsets: ["latin"],
   weight: ["400"],
+});
+
+const dongle = Dongle({
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -23,7 +28,7 @@ export default function RootLayout({
       <Head>
         <link href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" rel="stylesheet" />
       </Head>
-      <body className={noto.className}>{children}</body>
+      <body className={`${yeonSung.className} ${dongle.className}`}>{children}</body>
     </html>
   );
 }

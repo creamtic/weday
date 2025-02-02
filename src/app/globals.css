@@ -11,6 +11,7 @@ body {
   overflow-x: hidden;
   color: #4b5563;
   background: #fff;
+  font-family: "Yeon Sung", "Dongle", sans-serif !important;
 }
 html {
   scrollbar-width: none;

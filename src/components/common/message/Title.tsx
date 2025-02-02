@@ -1,3 +1,4 @@
+import { DEFAULT_FONT } from "@/constants/constant";
 import React from "react";
 
 type TitleProps = {
@@ -7,7 +8,12 @@ type TitleProps = {
 const Title: React.FC<TitleProps> = ({ message }) => {
   return (
     <>
-      <div className="flex items-center justify-center py-4 px-4 sm:px-6 md:px-8 text-rose-300">{message}</div>
+      <div
+        className="flex items-center justify-center pt-10 pb-4 px-4 sm:px-6 md:px-8 text-rose-300 text-xl"
+        style={{ fontFamily: `${DEFAULT_FONT}` }}
+      >
+        {message}
+      </div>
     </>
   );
 };

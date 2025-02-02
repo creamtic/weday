@@ -11,3 +11,6 @@ export const BRIDE_MOTHER_MOBILE = "01022593147";
 export const T_MAP_URI = "https://tmap.life/ce74a5bc";
 export const KAKAO_MAP_URI = "https://map.kakao.com/?itemId=17893188";
 export const NAVER_MAP_URI = "https://naver.me/5hulwJsB";
+
+export const DEFAULT_FONT = "Yeon Sung";
+export const CUTE_FONT = "Dongle";
