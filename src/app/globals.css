@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  color: #4b5563;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  scrollbar-width: none;
+}
+body {
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* 기본 상태: 투명 */
+.fade {
+  opacity: 0;
+  transform: translateY(-30px); /* 화면에 나타나기 전, 아래로 이동 */
+  transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out; /* 투명도와 위치 이동 동시에 애니메이션 */
+}
+
+/* 화면에 새로 나타난 모듈 (fade-in + 아래에서 위로 올라오는 효과) */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0); /* 원래 위치로 돌아오며 자연스럽게 나타남 */
+}
+
+/* 스크롤로 사라지는 모듈 (fade-out + 위로 올라가는 효과) */
+.fade-out {
+  opacity: 0;
+  transform: translateY(30px); /* 위로 이동하며 사라짐 */
+}
