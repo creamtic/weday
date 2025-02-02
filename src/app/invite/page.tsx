@@ -9,6 +9,9 @@ import Map from "@/components/invite/map/Map";
 import PhotoGallery from "@/components/invite/photoGallery/PhotoGallery";
 import Title from "@/components/common/message/Title";
 import Maeum from "@/components/invite/maeum/Maeum";
+import StartDay from "@/components/dday/StartDay";
+import WeddingDay from "@/components/dday/WeddingDay";
+import Dday from "@/components/dday/Dday";
 
 export default function InvitationPage() {
   const modulesRef = useRef<HTMLDivElement[]>([]);
@@ -154,8 +157,16 @@ export default function InvitationPage() {
           if (el) modulesRef.current.push(el);
         }}
       >
-        <Title message="마음 전해주실 곳" />
         <Maeum />
+      </div>
+
+      <div
+        className="fade"
+        ref={(el) => {
+          if (el) modulesRef.current.push(el);
+        }}
+      >
+        <Dday />
       </div>
     </div>
   );

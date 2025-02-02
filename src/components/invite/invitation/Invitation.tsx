@@ -6,10 +6,16 @@ import { BiMessageDetail } from "react-icons/bi";
 import { useState } from "react";
 import {
   BRIDE_FATHER_MOBILE,
+  BRIDE_FATHER_NAME,
   BRIDE_MOTHER_MOBILE,
+  BRIDE_MOTHER_NAME,
+  BRIDE_NAME,
   CUTE_FONT,
   GROOM_FATHER_MOBILE,
+  GROOM_FATHER_NAME,
   GROOM_MOTHER_MOBILE,
+  GROOM_MOTHER_NAME,
+  GROOM_NAME,
 } from "@/constants/constant";
 import RoundedImage from "@/components/common/image/RoundedImage";
 
@@ -41,19 +47,23 @@ export default function Invitation() {
 
       <div className="text-md mt-10 flex flex-col items-center gap-2 w-fit px-10 py-3">
         <div className="flex p-2">
-          <span className="font-bold">고태영 · 이숙이</span>
+          <span className="font-bold">
+            {GROOM_FATHER_NAME} · {GROOM_MOTHER_NAME}
+          </span>
           <span className="font-normal">의</span>
           <span className="w-[45px] font-normal text-center">아들</span>
-          <span className="font-bold">관우</span>
+          <span className="font-bold">{GROOM_NAME.slice(1)}</span>
           <a href="tel:01054669298" className="ml-1 flex flex-col items-center justify-center">
             <IoIosCall className="text-lg text-green-300" />
           </a>
         </div>
         <div className="flex p-2">
-          <span className="font-bold">이승구 · 조완복</span>
+          <span className="font-bold">
+            {BRIDE_FATHER_NAME} · {BRIDE_MOTHER_NAME}
+          </span>
           <span className="font-normal">의</span>
           <span className="w-[45px] font-normal text-center ">딸</span>
-          <span className="font-bold">세란</span>
+          <span className="font-bold">{BRIDE_NAME.slice(1)}</span>
           <a href="tel:01097273147" className="ml-1 flex flex-col items-center justify-center">
             <IoIosCall className="text-lg text-green-300" />
           </a>

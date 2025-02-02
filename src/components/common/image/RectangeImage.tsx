@@ -5,7 +5,7 @@ type ContentProps = {
   imageUrl: string;
 };
 
-const RactangleImage: React.FC<ContentProps> = ({ imageUrl }) => {
+const RectangleImage: React.FC<ContentProps> = ({ imageUrl }) => {
   return (
     <div className="relative w-[368px] h-[280px] shadow-md overflow-hidden">
       <Image src={imageUrl} alt="🤵👰" layout="fill" objectFit="cover" />
@@ -13,4 +13,4 @@ const RactangleImage: React.FC<ContentProps> = ({ imageUrl }) => {
   );
 };
 
-export default RactangleImage;
+export default RectangleImage;
