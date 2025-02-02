@@ -7,6 +7,7 @@ import Invitation from "@/components/invite/invitation/Invitation";
 import Calendar from "@/components/invite/calendar/Calendar";
 import Map from "@/components/invite/map/Map";
 import PhotoGallery from "@/components/invite/photoGallery/PhotoGallery";
+import Title from "@/components/common/message/Title";
 
 export default function InvitationPage() {
   const modulesRef = useRef<HTMLDivElement[]>([]);
@@ -111,6 +112,7 @@ export default function InvitationPage() {
           if (el) modulesRef.current.push(el);
         }}
       >
+        <Title message="갤러리" />
         <PhotoGallery
           images={[
             "infinityfilm/1.jpg",
@@ -145,6 +147,7 @@ export default function InvitationPage() {
           ]}
         />
       </div>
+      <div className=" pb-20" />
     </div>
   );
 }
