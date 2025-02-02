@@ -9,8 +9,6 @@ import Map from "@/components/invite/map/Map";
 import PhotoGallery from "@/components/invite/photoGallery/PhotoGallery";
 import Title from "@/components/common/message/Title";
 import Maeum from "@/components/invite/maeum/Maeum";
-import StartDay from "@/components/dday/StartDay";
-import WeddingDay from "@/components/dday/WeddingDay";
 import Dday from "@/components/dday/Dday";
 
 export default function InvitationPage() {
