@@ -26,7 +26,7 @@ export default function AccountInfo({ type, name, account }: AccountInfoProps) {
           }
         );
       })
-      .catch((err) => {
+      .catch(() => {
         toast.error("복사에 실패했습니다.");
       });
   };

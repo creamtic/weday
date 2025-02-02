@@ -1,8 +1,7 @@
-import { CUTE_FONT, DEFAULT_FONT, KAKAO_MAP_API_KEY, WEDDING_LOCATION_COORDINATE } from "@/constants/constant";
+import { CUTE_FONT, KAKAO_MAP_API_KEY, WEDDING_LOCATION_COORDINATE } from "@/constants/constant";
 import React, { useEffect } from "react";
 import Navi from "./Navi";
 import Location from "./Location";
-import Title from "@/components/common/message/Title";
 
 export default function KakaoMap() {
   useEffect(() => {
