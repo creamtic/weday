@@ -1,7 +1,7 @@
 import React from "react";
 import StartDay from "./StartDay";
 import WeddingDay from "./WeddingDay";
-import RoundedImage from "../common/image/RoundedImage";
+import Image from "next/image";
 
 const Dday = () => {
   return (
@@ -12,7 +12,9 @@ const Dday = () => {
       <WeddingDay />
       <div className="p-3" />
 
-      <RoundedImage imageUrl="/dday/1.jpg" />
+      <div className="relative w-[368px] h-[600px] shadow-md rounded-xl overflow-hidden">
+        <Image src="/dday/1.jpg" alt="🤵👰" layout="fill" objectFit="cover" />
+      </div>
     </div>
   );
 };
