@@ -43,7 +43,7 @@ const Calendar = () => {
         showNeighboringMonth={false}
         calendarType="hebrew"
         formatDay={(locale, date) => format(date, "d")}
-        tileClassName={({ date, view }) => getTileClassName(date, WEDDING_DATE)}
+        tileClassName={({ date }) => getTileClassName(date, WEDDING_DATE)}
         prev2Label={null}
         next2Label={null}
         prevLabel={null}

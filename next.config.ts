@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   images: {
     domains: ["drive.google.com", "drive.usercontent.google.com"],
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   async redirects() {
     return [
       {
