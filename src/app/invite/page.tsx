@@ -1,4 +1,4 @@
-"use client"; // Add this at the top of the file
+"use client";
 
 import { useEffect, useRef, useState } from "react";
 import Intro from "@/components/invite/Intro/Intro";
@@ -9,8 +9,8 @@ import Map from "@/components/invite/map/Map";
 import PhotoGallery from "@/components/invite/photoGallery/PhotoGallery";
 
 export default function InvitationPage() {
-  const modulesRef = useRef<HTMLDivElement[]>([]); // 모듈들 참조
-  const [scrollDirection, setScrollDirection] = useState("down"); // 스크롤 방향 추적
+  const modulesRef = useRef<HTMLDivElement[]>([]);
+  const [scrollDirection, setScrollDirection] = useState("down");
 
   useEffect(() => {
     let lastScrollTop = 0;
@@ -19,7 +19,7 @@ export default function InvitationPage() {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       setScrollDirection(scrollTop > lastScrollTop ? "down" : "up");
-      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // 음수 방지
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -65,25 +65,55 @@ export default function InvitationPage() {
 
   return (
     <div className="relative mx-auto max-w-[480px] min-w-[320px] w-full min-h-screen overflow-hidden">
-      <div className="fade" ref={(el) => el && modulesRef.current.push(el)}>
+      <div
+        className="fade"
+        ref={(el) => {
+          if (el) modulesRef.current.push(el); // 반환값을 제거하고, el이 존재하면 modulesRef에 추가
+        }}
+      >
         <Intro />
       </div>
-      <div className="fade" ref={(el) => el && modulesRef.current.push(el)}>
+      <div
+        className="fade"
+        ref={(el) => {
+          if (el) modulesRef.current.push(el);
+        }}
+      >
         <Invitation />
       </div>
-      <div className="fade" ref={(el) => el && modulesRef.current.push(el)}>
+      <div
+        className="fade"
+        ref={(el) => {
+          if (el) modulesRef.current.push(el);
+        }}
+      >
         <Calendar />
       </div>
-      <div className="fade" ref={(el) => el && modulesRef.current.push(el)}>
+      <div
+        className="fade"
+        ref={(el) => {
+          if (el) modulesRef.current.push(el);
+        }}
+      >
         <HallDetail date={new Date(2025, 5, 17, 12, 50)} location={"호텔수성 대구 수성구 용학로 106-7"} />
       </div>
-      <div className="fade" ref={(el) => el && modulesRef.current.push(el)}>
+      <div
+        className="fade"
+        ref={(el) => {
+          if (el) modulesRef.current.push(el);
+        }}
+      >
         <Map />
       </div>
-      <div className="fade" ref={(el) => el && modulesRef.current.push(el)}>
+      <div
+        className="fade"
+        ref={(el) => {
+          if (el) modulesRef.current.push(el);
+        }}
+      >
         <PhotoGallery
           images={[
-            "./infinityfilm/1.jpg",
+            "infinityfilm/1.jpg",
             "infinityfilm/2.jpg",
             "infinityfilm/3.jpg",
             "infinityfilm/4.jpg",
@@ -94,7 +124,7 @@ export default function InvitationPage() {
         />
         <PhotoGallery
           images={[
-            "./infinityfilm/1.jpg",
+            "infinityfilm/1.jpg",
             "infinityfilm/2.jpg",
             "infinityfilm/3.jpg",
             "infinityfilm/4.jpg",
@@ -105,7 +135,7 @@ export default function InvitationPage() {
         />
         <PhotoGallery
           images={[
-            "./infinityfilm/1.jpg",
+            "infinityfilm/1.jpg",
             "infinityfilm/2.jpg",
             "infinityfilm/3.jpg",
             "infinityfilm/4.jpg",

@@ -1,9 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  devIndicators: {
-    autoPrerender: false,
-  },
+  devIndicators: {},
   images: {
     domains: ["drive.google.com", "drive.usercontent.google.com"],
   },
