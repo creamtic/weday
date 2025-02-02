@@ -109,7 +109,7 @@ function PhotoGallery({ images = [] }: PhotoGalleryProps) {
         style={customStyles}
         ariaHideApp={false} // 모달에서 app의 숨김 처리 방지
       >
-        <div className="relative w-[100%] h-[90vh] overflow-hidden">
+        <div className="relative w-[80vw] h-[90vh] overflow-hidden">
           {/* Embla Carousel - 이미지 리스트를 캐러셀로 표시 */}
           <div ref={emblaRef} className="w-full h-[80vh]">
             <div className="flex w-full h-full">

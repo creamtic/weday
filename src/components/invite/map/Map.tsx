@@ -1,12 +1,11 @@
-import { KAKAO_MAP_API_KEY } from "@/constants/constant";
+import { KAKAO_MAP_API_KEY, WEDDING_LOCATION_COORDINATE } from "@/constants/constant";
 import React, { useEffect } from "react";
-
-const WEDDING_LOCATION_COORDINATE = { lat: 35.824482, lng: 128.619791 };
+import Navi from "./Navi";
+import Location from "./Location";
 
 export default function KakaoMap() {
   useEffect(() => {
     const script = document.createElement("script");
-    console.log(KAKAO_MAP_API_KEY);
     script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${KAKAO_MAP_API_KEY}&autoload=false`;
     script.async = true;
     document.head.appendChild(script);
@@ -38,5 +37,11 @@ export default function KakaoMap() {
     };
   }, []);
 
-  return <div id="map" style={{ width: "500px", height: "400px" }}></div>;
+  return (
+    <div className="flex flex-col justify-center items-center py-5">
+      <div id="map" className="w-[360px] h-[300px]" />
+      <Navi />
+      <Location />
+    </div>
+  );
 }
