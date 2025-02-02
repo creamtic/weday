@@ -87,7 +87,7 @@ export default function InvitationPage() {
           if (el) modulesRef.current.push(el);
         }}
       >
-        <Calendar />
+        <HallDetail />
       </div>
       <div
         className="fade"
@@ -95,7 +95,7 @@ export default function InvitationPage() {
           if (el) modulesRef.current.push(el);
         }}
       >
-        <HallDetail date={new Date(2025, 5, 17, 12, 50)} location={"호텔수성 대구 수성구 용학로 106-7"} />
+        <Calendar />
       </div>
       <div
         className="fade"
