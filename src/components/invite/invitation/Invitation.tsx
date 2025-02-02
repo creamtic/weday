@@ -70,7 +70,7 @@ export default function Invitation() {
           style={customStyles}
           ariaHideApp={false}
         >
-          <div className="w-[350] h-[400px] mt-4 p-4 bg-white rounded-lg shadow-md">
+          <div className="w-[400px] h-[400px] mt-4 p-4 bg-white rounded-lg shadow-md">
             <div className="flex justify-evenly">
               <div className="flex flex-col justify-center">
                 <span className="pt-10 pb-5 font-bold text-blue-500 text-center">신랑측</span>
