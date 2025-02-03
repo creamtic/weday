@@ -3,10 +3,11 @@ import HallTime from "./HallTime";
 import { formatDate } from "@/utils/dateUtil";
 import Title from "@/components/common/message/Title";
 import RoundedImage from "@/components/common/image/RoundedImage";
+import { WEDDING_DATE } from "@/constants/constant";
 
 export default function HallDetail() {
-  const date = new Date(2025, 5, 17, 12, 50);
-  const location = "호텔수성 피오니홀";
+  const date = WEDDING_DATE;
+  const location = "호텔수성 수성스퀘어 피오니홀";
 
   return (
     <div className="flex flex-col items-center justify-center py-4 px-4 sm:px-6 md:px-8">
