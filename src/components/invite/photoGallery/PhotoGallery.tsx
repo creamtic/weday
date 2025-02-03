@@ -132,7 +132,7 @@ function PhotoGallery({ images = [] }: PhotoGalleryProps) {
             ))}
           </DotNav>
 
-          <CloseButton onClick={closeModal} style={{ fontFamily: `${CUTE_FONT}`, fontSize: "1rem" }}>
+          <CloseButton onClick={closeModal} style={{ fontFamily: `${CUTE_FONT}`, fontSize: "1.3rem" }}>
             닫기
           </CloseButton>
         </div>
