@@ -15,10 +15,10 @@ const dongle = Dongle({
 
 export const metadata: Metadata = {
   title: "관우 ❤ 세란 결혼합니다.",
-  description: "저희의 첫 걸음을 축복해주세요.",
+  description: "저희의 첫 걸음, 그 순간이 되어주세요.",
   openGraph: {
     title: "관우 ❤ 세란 결혼합니다.",
-    description: "저희의 첫 걸음을 축복해주세요.",
+    description: "저희의 첫 걸음, 그 순간이 되어주세요.",
     url: "https://kw-sr.vercel.app",
     images: [
       {
