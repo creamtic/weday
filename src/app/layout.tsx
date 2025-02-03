@@ -14,8 +14,8 @@ const dongle = Dongle({
 });
 
 export const metadata: Metadata = {
-  title: "고관우 ❤ 이세란 결혼합니다.",
-  description: "고관우 ❤ 이세란 결혼합니다.",
+  title: "관우 ❤ 세란 결혼합니다.",
+  description: "관우 ❤ 세란 결혼합니다.",
 };
 
 export default function RootLayout({
@@ -27,13 +27,13 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" rel="stylesheet" />
-        <meta property="og:title" content="고관우 ❤ 이세란 결혼합니다." />
-        <meta property="og:description" content="고관우 ❤ 이세란 결혼합니다." />
-        <meta property="og:image" content="https://cdn.hankyung.com/photo/202404/99.12197822.1.jpg" />
+        <meta property="og:title" content="관우 ❤ 세란 결혼합니다." />
+        <meta property="og:description" content="관우 ❤ 세란 결혼합니다." />
+        <meta property="og:image" content="https://ca.slack-edge.com/T061BFHLJJ1-U07M25JQXCH-g2780cf16183-512" />
         <meta property="og:url" content="https://kw-sr.vercel.app" />
         <meta property="og:type" content="website" />
 
-        <meta property="og:site_name" content="고관우 ❤ 이세란 결혼합니다." />
+        <meta property="og:site_name" content="관우 ❤ 세란 결혼합니다." />
         <meta property="og:locale" content="ko_KR" />
       </Head>
       <body className={`${yeonSung.className} ${dongle.className}`}>{children}</body>
