@@ -24,15 +24,32 @@ const getTimeDifference = (startDate: Date, endDate: Date) => {
 const StartDay = () => {
   const startDate = START_DATE;
 
-  const [elapsedTime, setElapsedTime] = useState(getTimeDifference(startDate, new Date()));
+  const [elapsedTime, setElapsedTime] = useState<{
+    years: number;
+    months: number;
+    days: number;
+    hours: number;
+    minutes: number;
+    seconds: number;
+  } | null>(null);
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    const updateElapsedTime = () => {
       setElapsedTime(getTimeDifference(startDate, new Date()));
-    }, 1000); // 1초마다 갱신
+    };
 
-    return () => clearInterval(interval); // 컴포넌트 언마운트 시 인터벌 정리
-  }, []);
+    updateElapsedTime();
+
+    const interval = setInterval(() => {
+      updateElapsedTime();
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [startDate]);
+
+  if (!elapsedTime) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className="time-difference">

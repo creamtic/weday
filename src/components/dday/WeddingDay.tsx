@@ -21,18 +21,35 @@ const getTimeDifference = (startDate: Date, endDate: Date) => {
   };
 };
 
-const StartDay = () => {
+const WeddingDay = () => {
   const weddingDate = WEDDING_DATE;
 
-  const [remainingTime, setRemainingTime] = useState(getTimeDifference(new Date(), weddingDate));
+  const [remainingTime, setRemainingTime] = useState<{
+    years: number;
+    months: number;
+    days: number;
+    hours: number;
+    minutes: number;
+    seconds: number;
+  } | null>(null);
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    const updateRemainingTime = () => {
       setRemainingTime(getTimeDifference(new Date(), weddingDate));
-    }, 1000); // 1초마다 갱신
+    };
+
+    updateRemainingTime();
+
+    const interval = setInterval(() => {
+      updateRemainingTime();
+    }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [weddingDate]);
+
+  if (!remainingTime) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className="time-difference">
@@ -44,4 +61,4 @@ const StartDay = () => {
   );
 };
 
-export default StartDay;
+export default WeddingDay;

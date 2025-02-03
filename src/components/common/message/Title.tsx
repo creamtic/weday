@@ -9,7 +9,7 @@ const Title: React.FC<TitleProps> = ({ message }) => {
   return (
     <>
       <div
-        className="flex items-center justify-center pt-10 pb-4 px-4 sm:px-6 md:px-8 text-rose-300 text-xl"
+        className="flex items-center justify-center pt-10 pb-4 px-4 sm:px-6 md:px-8 text-rose-300 text-[1.5rem]"
         style={{ fontFamily: `${DEFAULT_FONT}` }}
       >
         {message}

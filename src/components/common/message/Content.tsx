@@ -12,7 +12,7 @@ const Content: React.FC<ContentProps> = ({ message }) => {
     </React.Fragment>
   ));
 
-  return <div className="text-center py-4 px-4 sm:px-6 md:px-8">{formattedMessage}</div>;
+  return <div className="text-center py-4 px-4 sm:px-6 md:px-8 text-[1.1rem]">{formattedMessage}</div>;
 };
 
 export default Content;

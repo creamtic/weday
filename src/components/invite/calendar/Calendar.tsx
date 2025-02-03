@@ -30,7 +30,7 @@ const Calendar = () => {
   return (
     <div className="relative mx-auto w-full overflow-hidden" style={{ maxWidth: "480px", minWidth: "320px" }}>
       <div style={{ textAlign: "center", marginBottom: "16px" }}>
-        <div className="text-rose-400  text-lg" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.05)" }}>
+        <div className="text-rose-400 text-[1.3rem]" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.05)" }}>
           {getMonthName(WEDDING_DATE)}
         </div>
       </div>

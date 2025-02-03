@@ -4,7 +4,7 @@
   padding: 0 50px;
   scale: 0.9;
   font-family: Dongle;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .react-calendar__tile {
@@ -31,7 +31,7 @@
 }
 
 .react-calendar__tile abbr {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding: 5px 12px;
 }
 .react-calendar__tile.selected {
