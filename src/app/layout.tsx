@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     url: "https://kw-sr.vercel.app",
     images: [
       {
-        url: "/ogp/1.jpg",
+        url: "/ogp/2.jpg",
         width: 1200,
         height: 630,
         alt: "",
