@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       {
         url: "/ogp/1.jpg",
         width: 1200,
-        height: 960,
+        height: 630,
         alt: "",
       },
     ],
