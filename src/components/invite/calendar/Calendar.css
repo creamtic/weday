@@ -71,8 +71,8 @@
   color: #4b4b4b;
 }
 
-.react-calendar__month-view__weekdays__weekday--current {
-  color: #e08d62;
+.react-calendar__month-view__weekdays__weekday:nth-child(1) {
+  color: #ff8a74;
 }
 
 .react-calendar__month-view__weekdays__weekday abbr {
