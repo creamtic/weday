@@ -104,23 +104,13 @@ function PhotoGallery({ images = [] }: PhotoGalleryProps) {
     <>
       <InfinityFilm images={images} onImageClick={handleImageClick} />
 
-      <Modal
-        isOpen={selectedImageIndex !== null}
-        onRequestClose={closeModal}
-        style={customStyles}
-        ariaHideApp={false} // 모달에서 app의 숨김 처리 방지
-      >
+      <Modal isOpen={selectedImageIndex !== null} onRequestClose={closeModal} style={customStyles} ariaHideApp={false}>
         <div className="relative w-[80vw] h-[90vh] overflow-hidden">
-          {/* Embla Carousel - 이미지 리스트를 캐러셀로 표시 */}
           <div ref={emblaRef} className="w-full h-[80vh]">
             <div className="flex w-full h-full">
               {images.map((image, index) => (
                 <div key={index} className="flex-none w-full h-full">
-                  <img
-                    src={image}
-                    alt={`carousel-image-${index}`}
-                    className="w-full h-full object-contain" // 이미지를 비율에 맞게 조정
-                  />
+                  <img src={image} alt={`carousel-image-${index}`} className="w-full h-full object-contain" />
                 </div>
               ))}
             </div>

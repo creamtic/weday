@@ -10,6 +10,7 @@ import PhotoGallery from "@/components/invite/photoGallery/PhotoGallery";
 import Title from "@/components/common/message/Title";
 import Maeum from "@/components/invite/maeum/Maeum";
 import Dday from "@/components/dday/Dday";
+import { Slide, ToastContainer } from "react-toastify";
 
 export default function InvitationPage() {
   const modulesRef = useRef<HTMLDivElement[]>([]);
@@ -63,105 +64,128 @@ export default function InvitationPage() {
   }, [scrollDirection]);
 
   return (
-    <div className="relative mx-auto max-w-[480px] min-w-[320px] w-full min-h-screen overflow-hidden">
-      <div
-        className="fade"
-        ref={(el) => {
-          if (el) modulesRef.current.push(el);
-        }}
-      >
-        <Intro />
-      </div>
-      <div
-        className="fade"
-        ref={(el) => {
-          if (el) modulesRef.current.push(el);
-        }}
-      >
-        <Invitation />
-      </div>
-      <div
-        className="fade"
-        ref={(el) => {
-          if (el) modulesRef.current.push(el);
-        }}
-      >
-        <HallDetail />
-      </div>
-      <div
-        className="fade"
-        ref={(el) => {
-          if (el) modulesRef.current.push(el);
-        }}
-      >
-        <Calendar />
-      </div>
-      <div
-        className="fade"
-        ref={(el) => {
-          if (el) modulesRef.current.push(el);
-        }}
-      >
-        <Map />
-      </div>
-      <div
-        className="fade"
-        ref={(el) => {
-          if (el) modulesRef.current.push(el);
-        }}
-      >
-        <Title message="갤러리" />
-        <PhotoGallery
-          images={[
-            "infinityfilm/1.jpg",
-            "infinityfilm/2.jpg",
-            "infinityfilm/3.jpg",
-            "infinityfilm/4.jpg",
-            "infinityfilm/5.jpg",
-            "infinityfilm/6.jpg",
-            "infinityfilm/7.jpg",
-          ]}
-        />
-        <PhotoGallery
-          images={[
-            "infinityfilm/1.jpg",
-            "infinityfilm/2.jpg",
-            "infinityfilm/3.jpg",
-            "infinityfilm/4.jpg",
-            "infinityfilm/5.jpg",
-            "infinityfilm/6.jpg",
-            "infinityfilm/7.jpg",
-          ]}
-        />
-        <PhotoGallery
-          images={[
-            "infinityfilm/1.jpg",
-            "infinityfilm/2.jpg",
-            "infinityfilm/3.jpg",
-            "infinityfilm/4.jpg",
-            "infinityfilm/5.jpg",
-            "infinityfilm/6.jpg",
-            "infinityfilm/7.jpg",
-          ]}
-        />
-      </div>
-      <div
-        className="fade"
-        ref={(el) => {
-          if (el) modulesRef.current.push(el);
-        }}
-      >
-        <Maeum />
-      </div>
+    <>
+      <div className="relative mx-auto max-w-[480px] min-w-[320px] w-full min-h-screen overflow-hidden">
+        <div
+          className="fade"
+          ref={(el) => {
+            if (el) modulesRef.current.push(el);
+          }}
+        >
+          <Intro />
+        </div>
+        <div
+          className="fade"
+          ref={(el) => {
+            if (el) modulesRef.current.push(el);
+          }}
+        >
+          <Invitation />
+        </div>
+        <div
+          className="fade"
+          ref={(el) => {
+            if (el) modulesRef.current.push(el);
+          }}
+        >
+          <HallDetail />
+        </div>
+        <div
+          className="fade"
+          ref={(el) => {
+            if (el) modulesRef.current.push(el);
+          }}
+        >
+          <Calendar />
+        </div>
+        <div
+          className="fade"
+          ref={(el) => {
+            if (el) modulesRef.current.push(el);
+          }}
+        >
+          <Map />
+        </div>
+        <div
+          className="fade"
+          ref={(el) => {
+            if (el) modulesRef.current.push(el);
+          }}
+        >
+          <Title message="갤러리" />
+          <PhotoGallery
+            images={[
+              "infinityfilm/1.jpg",
+              "infinityfilm/2.jpg",
+              "infinityfilm/3.jpg",
+              "infinityfilm/4.jpg",
+              "infinityfilm/5.jpg",
+              "infinityfilm/6.jpg",
+              "infinityfilm/7.jpg",
+            ]}
+          />
+          <PhotoGallery
+            images={[
+              "infinityfilm/1.jpg",
+              "infinityfilm/2.jpg",
+              "infinityfilm/3.jpg",
+              "infinityfilm/4.jpg",
+              "infinityfilm/5.jpg",
+              "infinityfilm/6.jpg",
+              "infinityfilm/7.jpg",
+            ]}
+          />
+          <PhotoGallery
+            images={[
+              "infinityfilm/1.jpg",
+              "infinityfilm/2.jpg",
+              "infinityfilm/3.jpg",
+              "infinityfilm/4.jpg",
+              "infinityfilm/5.jpg",
+              "infinityfilm/6.jpg",
+              "infinityfilm/7.jpg",
+            ]}
+          />
+        </div>
+        <div
+          className="fade"
+          ref={(el) => {
+            if (el) modulesRef.current.push(el);
+          }}
+        >
+          <Maeum />
+        </div>
 
-      <div
-        className="fade"
-        ref={(el) => {
-          if (el) modulesRef.current.push(el);
-        }}
-      >
-        <Dday />
+        <div
+          className="fade"
+          ref={(el) => {
+            if (el) modulesRef.current.push(el);
+          }}
+        >
+          <Dday />
+        </div>
       </div>
-    </div>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={false}
+        limit={8}
+        hideProgressBar
+        newestOnTop
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Slide}
+        style={{
+          position: "fixed",
+          bottom: "20px",
+          left: "50%",
+          transform: "translateX(-50%)",
+          zIndex: 9999,
+        }}
+      />
+    </>
   );
 }
