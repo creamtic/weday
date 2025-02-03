@@ -1,7 +1,7 @@
 export const KAKAO_MAP_API_KEY = process.env.NEXT_PUBLIC_KAKAO_MAP_API_KEY;
 
-export const START_DATE = new Date(2022, 6, 12);
-export const WEDDING_DATE = new Date(2025, 4, 17);
+export const START_DATE = new Date(2022, 5, 12); // 달은 0부터 시작
+export const WEDDING_DATE = new Date(2025, 4, 17); // 달은 0부터 시작
 export const WEDDING_LOCATION_COORDINATE = { lat: 35.824482, lng: 128.619791 };
 
 export const GROOM_NAME = "고관우";
