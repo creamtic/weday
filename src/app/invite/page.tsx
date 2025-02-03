@@ -167,7 +167,7 @@ export default function InvitationPage() {
       </div>
       <ToastContainer
         position="bottom-center"
-        autoClose={false}
+        autoClose={3000}
         limit={8}
         hideProgressBar
         newestOnTop

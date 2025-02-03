@@ -20,7 +20,7 @@ export default function AccountInfo({ type, name, account }: AccountInfoProps) {
             {account}
           </span>,
           {
-            autoClose: false,
+            autoClose: 3000,
             closeOnClick: true,
           }
         );
