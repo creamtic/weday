@@ -41,3 +41,9 @@ body::-webkit-scrollbar {
   opacity: 0;
   transform: translateY(30px); /* 위로 이동하며 사라짐 */
 }
+
+.Toastify__toast {
+  border-radius: 1rem;
+  margin-top: 5px;
+  width: 300px;
+}

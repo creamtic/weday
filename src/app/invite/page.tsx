@@ -178,13 +178,6 @@ export default function InvitationPage() {
         pauseOnHover
         theme="light"
         transition={Slide}
-        style={{
-          position: "fixed",
-          bottom: "20px",
-          left: "50%",
-          transform: "translateX(-50%)",
-          zIndex: 9999,
-        }}
       />
     </>
   );
