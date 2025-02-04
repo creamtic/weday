@@ -2,6 +2,8 @@ import React from "react";
 import StartDay from "./StartDay";
 import WeddingDay from "./WeddingDay";
 import Image from "next/image";
+import { IMAGE_D_DAY } from "@/constants/constant";
+import { convertGoogleImage } from "@/utils/imageUtil";
 
 const Dday = () => {
   return (
@@ -13,7 +15,7 @@ const Dday = () => {
       <div className="p-3" />
 
       <div className="relative w-[368px] h-[600px] shadow-md rounded-xl overflow-hidden">
-        <Image src="/dday/1.jpg" alt="🤵👰" layout="fill" objectFit="cover" />
+        <Image src={convertGoogleImage(IMAGE_D_DAY)} alt="🤵👰" layout="fill" objectFit="cover" />
       </div>
     </div>
   );
