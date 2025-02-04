@@ -37,7 +37,7 @@ export const CUTE_FONT = "Dongle";
 
 export const GOOGLE_DRIVE_PREFIX = "https://lh3.googleusercontent.com/d";
 export const IMAGE_D_DAY = "11IQ61GqrDuOaHlEsS3YecdZIsBYTsCeX";
-export const IMAGE_HALL_DETAIL = "1aI5NDMCyhQ0OATDKnXgl3OL-ROJWCq0-";
+export const IMAGE_HALL_DETAIL = "14B0EVkS0HnP3-Tphcx0De5gHIrKvAgzX";
 export const IMAGE_INFINITY_FILM = [
   "1C6P7JdbLcYfo2xl7yhzIt9l8_cw66T77",
   "1Jstxc8g4iDMfW6-smd1lJGJvsTHcdrk6",
