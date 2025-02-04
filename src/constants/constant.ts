@@ -1,3 +1,5 @@
+import WeddingDay from "@/components/dday/WeddingDay";
+
 export const KAKAO_MAP_API_KEY = process.env.NEXT_PUBLIC_KAKAO_MAP_API_KEY;
 
 export const START_DATE = new Date(2022, 5, 12); // 달은 0부터 시작

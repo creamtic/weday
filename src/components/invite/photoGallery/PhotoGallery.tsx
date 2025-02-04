@@ -16,6 +16,7 @@ const customStyles = {
     padding: "0",
     border: "none",
     background: "none",
+    overflow: "visible",
   },
   overlay: {
     backgroundColor: "rgba(0, 0, 0, 0.7)", // 어두운 색의 오버레이
@@ -105,17 +106,18 @@ function PhotoGallery({ images = [] }: PhotoGalleryProps) {
       <InfinityFilm images={images} onImageClick={handleImageClick} />
 
       <Modal isOpen={selectedImageIndex !== null} onRequestClose={closeModal} style={customStyles} ariaHideApp={false}>
-        <div className="relative w-[80vw] h-[90vh] overflow-hidden">
-          <div ref={emblaRef} className="w-full h-[80vh]">
-            <div className="flex w-full h-full">
+        <div className="w-[80vw] max-w-[480px] overflow-hidden">
+          <div ref={emblaRef}>
+            <div className="flex ">
               {images.map((image, index) => (
-                <div key={index} className="flex-none w-full h-full">
-                  <img src={image} alt={`carousel-image-${index}`} className="w-full h-full object-contain" />
+                <div key={index} className="flex-none w-full ">
+                  <img src={image} alt={`carousel-image-${index}`} className="w-full  object-contain" />
                 </div>
               ))}
             </div>
           </div>
-
+        </div>
+        <div className="absolute h-[100px] left-1/2 transform -translate-x-1/2">
           <DotNav>
             {images.map((_, index) => (
               <Dot key={index} $active={selectedDot === index} onClick={() => handleDotClick(index)} />
