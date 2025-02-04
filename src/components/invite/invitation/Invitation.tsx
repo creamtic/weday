@@ -34,8 +34,8 @@ const customStyles = {
     background: "none",
   },
   overlay: {
-    backgroundColor: "rgba(0, 0, 0, 0.7)", // 어두운 색의 오버레이
-    backdropFilter: "blur(5px)", // 배경 블러 처리
+    backgroundColor: "rgba(0, 0, 0, 0.7)",
+    backdropFilter: "blur(5px)",
   },
 };
 export default function Invitation() {

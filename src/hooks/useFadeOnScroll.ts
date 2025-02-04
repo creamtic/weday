@@ -52,7 +52,6 @@ export const useFadeOnScroll = () => {
     modulesRef.current.forEach((module) => observer.observe(module));
 
     return () => {
-      // 클린업
       modulesRef.current.forEach((module) => observer.unobserve(module));
     };
   }, [scrollDirection]);
