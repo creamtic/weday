@@ -11,6 +11,8 @@ import Title from "@/components/common/message/Title";
 import Maeum from "@/components/invite/maeum/Maeum";
 import Dday from "@/components/dday/Dday";
 import { Slide, ToastContainer } from "react-toastify";
+import { IMAGE_INFINITY_FILM } from "@/constants/constant";
+import { convertGoogleImage } from "@/utils/imageUtil";
 
 export default function InvitationPage() {
   const modulesRef = useRef<HTMLDivElement[]>([]);
@@ -113,39 +115,9 @@ export default function InvitationPage() {
           }}
         >
           <Title message="갤러리" />
-          <PhotoGallery
-            images={[
-              "infinityfilm/1.jpg",
-              "infinityfilm/2.jpg",
-              "infinityfilm/3.jpg",
-              "infinityfilm/4.jpg",
-              "infinityfilm/5.jpg",
-              "infinityfilm/6.jpg",
-              "infinityfilm/7.jpg",
-            ]}
-          />
-          <PhotoGallery
-            images={[
-              "infinityfilm/1.jpg",
-              "infinityfilm/2.jpg",
-              "infinityfilm/3.jpg",
-              "infinityfilm/4.jpg",
-              "infinityfilm/5.jpg",
-              "infinityfilm/6.jpg",
-              "infinityfilm/7.jpg",
-            ]}
-          />
-          <PhotoGallery
-            images={[
-              "infinityfilm/1.jpg",
-              "infinityfilm/2.jpg",
-              "infinityfilm/3.jpg",
-              "infinityfilm/4.jpg",
-              "infinityfilm/5.jpg",
-              "infinityfilm/6.jpg",
-              "infinityfilm/7.jpg",
-            ]}
-          />
+          <PhotoGallery images={IMAGE_INFINITY_FILM.slice(0, 7).map((image) => convertGoogleImage(image))} />
+          <PhotoGallery images={IMAGE_INFINITY_FILM.slice(0, 7).map((image) => convertGoogleImage(image))} />
+          <PhotoGallery images={IMAGE_INFINITY_FILM.slice(0, 7).map((image) => convertGoogleImage(image))} />
         </div>
         <div
           className="fade"

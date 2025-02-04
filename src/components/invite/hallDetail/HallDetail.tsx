@@ -3,7 +3,8 @@ import HallTime from "./HallTime";
 import { formatDate } from "@/utils/dateUtil";
 import Title from "@/components/common/message/Title";
 import RoundedImage from "@/components/common/image/RoundedImage";
-import { WEDDING_DATE } from "@/constants/constant";
+import { IMAGE_HALL_DETAIL, WEDDING_DATE } from "@/constants/constant";
+import { convertGoogleImage } from "@/utils/imageUtil";
 
 export default function HallDetail() {
   const date = WEDDING_DATE;
@@ -14,7 +15,7 @@ export default function HallDetail() {
       <Title message={"예식 안내"} />
       <HallTime time={formatDate(date)} />
       <HallLocation location={location} />
-      <RoundedImage imageUrl="/hallDetail/1.jpg" />
+      <RoundedImage imageUrl={convertGoogleImage(IMAGE_HALL_DETAIL)} />
     </div>
   );
 }

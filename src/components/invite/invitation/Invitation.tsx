@@ -16,8 +16,10 @@ import {
   GROOM_MOTHER_MOBILE,
   GROOM_MOTHER_NAME,
   GROOM_NAME,
+  IMAGE_INVITATION,
 } from "@/constants/constant";
 import RoundedImage from "@/components/common/image/RoundedImage";
+import { convertGoogleImage } from "@/utils/imageUtil";
 
 const customStyles = {
   content: {
@@ -43,7 +45,7 @@ export default function Invitation() {
       <Title message="소중한 분들을 초대합니다." />
       <Content message="오랜 기다림 속에서 저희 두 사람, \n 한 마음 되어 참된 사랑의 결실을 \n 맺게 되었습니다. \n\n 오셔서 축복해 주시면 큰 기쁨이겠습니다." />
 
-      <RoundedImage imageUrl="/invitation/1.jpg" />
+      <RoundedImage imageUrl={convertGoogleImage(IMAGE_INVITATION)} />
 
       <div className="text-md mt-10 flex flex-col items-center gap-2 w-fit px-10 py-3">
         <div className="flex p-2">

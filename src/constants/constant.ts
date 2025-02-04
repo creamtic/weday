@@ -1,5 +1,3 @@
-import WeddingDay from "@/components/dday/WeddingDay";
-
 export const KAKAO_MAP_API_KEY = process.env.NEXT_PUBLIC_KAKAO_MAP_API_KEY;
 
 export const START_DATE = new Date(2022, 5, 12); // 달은 0부터 시작
@@ -36,3 +34,32 @@ export const NAVER_MAP_URI = "https://naver.me/5hulwJsB";
 
 export const DEFAULT_FONT = "Yeon Sung";
 export const CUTE_FONT = "Dongle";
+
+export const GOOGLE_DRIVE_PREFIX = "https://lh3.googleusercontent.com/d";
+export const IMAGE_D_DAY = "11IQ61GqrDuOaHlEsS3YecdZIsBYTsCeX";
+export const IMAGE_HALL_DETAIL = "11IQ61GqrDuOaHlEsS3YecdZIsBYTsCeX";
+export const IMAGE_INFINITY_FILM = [
+  "1C6P7JdbLcYfo2xl7yhzIt9l8_cw66T77",
+  "1Jstxc8g4iDMfW6-smd1lJGJvsTHcdrk6",
+  "1-V8u0qbexeJI6y8j2y8doujHMwYYqP37",
+  "1C6P7JdbLcYfo2xl7yhzIt9l8_cw66T77",
+  "1Jstxc8g4iDMfW6-smd1lJGJvsTHcdrk6",
+  "1-V8u0qbexeJI6y8j2y8doujHMwYYqP37",
+  "1-V8u0qbexeJI6y8j2y8doujHMwYYqP37",
+];
+export const IMAGE_INTRO = {
+  flowerEffect: "1MnbXs15LnzXzNhWTDXWcpNe4QLudo803",
+  main: "1a7xtAlm-CGATfQ4zOpfCMV8VFy7ADFeT",
+  our: "1onztT1j_8J737ioLUwsg6oGYdYF5mtEl",
+  weddingDay: "1x28jRNCeG4on5ERlzDlOs-cf9TS7UZv_",
+};
+
+export const IMAGE_INVITATION = "1GwgM0AzRCnqQj5Jw2HE5gKlbv6f9LN0I";
+
+export const IMAGE_MAP = {
+  kakao: "1GD3KJlluBqTucEdjagIBFkfBQjiIFdGf",
+  naver: "1XpNFWpU5Sqjs2JAd1IZdd4WyyHuQ8b7b",
+  tMap: "11GlyCUEjwPhriuTRIG-tYyeZcKm523l2",
+};
+
+export const IMAGE_OGP = "1lBZhs-PGWHl7KRQSeRiqkqR1obWbpsl-";

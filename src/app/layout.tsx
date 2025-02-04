@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Yeon_Sung, Dongle } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
+import { IMAGE_OGP } from "@/constants/constant";
+import { convertGoogleImage } from "@/utils/imageUtil";
 
 const yeonSung = Yeon_Sung({
   subsets: ["latin"],
@@ -22,7 +24,7 @@ export const metadata: Metadata = {
     url: "https://kw-sr.vercel.app",
     images: [
       {
-        url: "/ogp/2.jpg",
+        url: convertGoogleImage(IMAGE_OGP),
         width: 1200,
         height: 630,
         alt: "",

@@ -5,7 +5,12 @@ const nextConfig: NextConfig = {
     autoPrerender: false,
   },
   images: {
-    domains: ["drive.google.com", "drive.usercontent.google.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+      },
+    ],
   },
   // TODO: REMOVE this ignore code
   typescript: {
