@@ -1,15 +1,3 @@
-.my-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.my-gallery_column {
-  flex: 1;
-  min-width: 30%;
-  margin-bottom: 10px;
-}
-
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -40,4 +28,69 @@
   font-size: 24px;
   cursor: pointer;
   color: #333;
+}
+
+.dot-nav {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: white;
+}
+
+.close-button {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 35px;
+  background-color: rgb(145 130 130 / 70%);
+  border-radius: 9999px;
+  font-size: 13px;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.close-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+}
+
+.modal-container {
+  width: 80vw;
+  max-width: 480px;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+}
+
+.carousel-item {
+  flex: none;
+  width: 100%;
+}
+
+.carousel-image {
+  width: 100%;
+  object-fit: contain;
 }
