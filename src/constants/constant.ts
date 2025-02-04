@@ -6,19 +6,19 @@ export const WEDDING_LOCATION_COORDINATE = { lat: 35.824482, lng: 128.619791 };
 
 export const GROOM_NAME = "고관우";
 export const GROOM_MOBILE = "01054669298";
-export const GROOM_ACCOUNT = "신한은행 110-334-866541";
+export const GROOM_ACCOUNT = "신한 110-334-866541";
 
 export const GROOM_FATHER_NAME = "고태영";
 export const GROOM_FATHER_MOBILE = "01035075887";
-export const GROOM_FATHER_ACCOUNT = "대구은행 508-12-893286-3";
+export const GROOM_FATHER_ACCOUNT = "iM 508-12-893286-3";
 
 export const GROOM_MOTHER_NAME = "이숙이";
 export const GROOM_MOTHER_MOBILE = "01029759298";
-export const GROOM_MOTHER_ACCOUNT = "대구은행 227-07-008265-001";
+export const GROOM_MOTHER_ACCOUNT = "iM 227-07-008265-001";
 
 export const BRIDE_NAME = "이세란";
 export const BRIDE_MOBILE = "01097273147";
-export const BRIDE_ACCOUNT = "토스뱅크 1000-0942-9418";
+export const BRIDE_ACCOUNT = "토스 1000-0942-9418";
 
 export const BRIDE_FATHER_NAME = "이승구";
 export const BRIDE_FATHER_MOBILE = "01031853147";
