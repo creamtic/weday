@@ -26,7 +26,8 @@ export default function Maeum() {
          축하해 주셔서 진심으로 감사드립니다.\n\n
 
         소중한 한걸음 내어주셔 큰 힘이 되고,\n
-        함께 해주신 마음 항상 가슴에 간직하겠습니다."
+        함께 해주신 이 순간,\n
+        항상 가슴에 간직하겠습니다."
       />
 
       <div className="flex items-center justify-center pt-10 pb-1 px-4 sm:px-6 md:px-8 text-blue-400 text-opacity-70 text-xl">
