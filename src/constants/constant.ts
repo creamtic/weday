@@ -32,24 +32,44 @@ export const T_MAP_URI = "https://tmap.life/ce74a5bc";
 export const KAKAO_MAP_URI = "https://map.kakao.com/?itemId=17893188";
 export const NAVER_MAP_URI = "https://naver.me/5hulwJsB";
 
-export const DEFAULT_FONT = "Yeon Sung";
-export const CUTE_FONT = "Dongle";
-
+export const DEFAULT_FONT = "Gowun Dodum";
+export const CUTE_FONT = "Gowun Dodum";
 export const GOOGLE_DRIVE_PREFIX = "https://lh3.googleusercontent.com/d";
 export const IMAGE_D_DAY = "11IQ61GqrDuOaHlEsS3YecdZIsBYTsCeX";
 export const IMAGE_HALL_DETAIL = "14B0EVkS0HnP3-Tphcx0De5gHIrKvAgzX";
-export const IMAGE_INFINITY_FILM = [
-  "1C6P7JdbLcYfo2xl7yhzIt9l8_cw66T77",
-  "1Jstxc8g4iDMfW6-smd1lJGJvsTHcdrk6",
-  "1-V8u0qbexeJI6y8j2y8doujHMwYYqP37",
-  "1C6P7JdbLcYfo2xl7yhzIt9l8_cw66T77",
-  "1Jstxc8g4iDMfW6-smd1lJGJvsTHcdrk6",
-  "1-V8u0qbexeJI6y8j2y8doujHMwYYqP37",
-  "1-V8u0qbexeJI6y8j2y8doujHMwYYqP37",
+export const IMAGE_INFINITY_FILM_1 = [
+  "1Ems1KXup9ZNtEgckyyphX_OAFl32Gixx",
+  "1oAtoFFUvIQm5AOqm0euIqUclVspize4j",
+  "1lCoFlwHC-MOwM0tw0FfazulWcjoSgpaa",
+  "1-IOB4SnqyjmqUMypvF7yVxpSgoq_Csfr",
+  "1IV3pnKK5oTt_EmHP5z1sPjTe-qxzQjtk",
+  "1Xhdh9NWrMs-wr18Zm1sxzgbse7dXSidr",
+  "1E9gHHhP2U18CjDlvIRodiO2x9Rm7BCXo",
+  "14f8lq1Rsuuz7kgTcIZO9tr8lPbYy3FEL",
+];
+export const IMAGE_INFINITY_FILM_2 = [
+  "1dNxsyPt3ERBBYjzejSlHHR21U6GzUh7z",
+  "1Lqut9pFYGOghcktAvfv3R7oNvfw3FDH9",
+  "1zlXtkWSA5kRTEmGVsAybvH-ix6R8Rklc",
+  "1HdyfeoIngvRSFwnnOq2fUGztrOiDi0Pk",
+  "1eN-HvPudc3zwUVqXfJWf29nfVBVvwDaz",
+  "1SjKI_9BH-nYiwpMn_YzRBmbFolsMFHef",
+  "1Ch6oMBu8y6YDyU7_V15E5uDUoGwLTGy4",
+  "1bBFq-8Z4GNZdEam6ocyS2FlwVqB2Z0rt",
+];
+export const IMAGE_INFINITY_FILM_3 = [
+  "1fxHJ3pYJBoaOsIdqUo6ld2rs69ouFogr",
+  "1TQKKZemigaQaJgVCLP_-rN0FRA7j5oQx",
+  "1GTo6gsotl8blYd2y8nHWr9ceHfAAXmaT",
+  "1X2Ixj1j5BaCv2UPGPUJEurHaeDS3l2Lb",
+  "15ukubzuZOgukhN6XPhIdFMVj_cZT5YG2",
+  "1wQ2axo9gIB9d1i9koS08b75hGNKR3iSE",
+  "1K-qY3POLjLcHPO1IAbzweOr4pjQdxlmB",
+  "1FiDlK69YIuewCPsMl8K860_OyUBpGQWA",
 ];
 export const IMAGE_INTRO = {
   flowerEffect: "1MnbXs15LnzXzNhWTDXWcpNe4QLudo803",
-  main: "1a7xtAlm-CGATfQ4zOpfCMV8VFy7ADFeT",
+  main: "1QXSmyiuIOGsaeri4nwtIWHdrd95TRAcl",
   our: "1onztT1j_8J737ioLUwsg6oGYdYF5mtEl",
   weddingDay: "1x28jRNCeG4on5ERlzDlOs-cf9TS7UZv_",
 };

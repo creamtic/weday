@@ -11,8 +11,9 @@ import Title from "@/components/common/message/Title";
 import Maeum from "@/components/invite/maeum/Maeum";
 import Dday from "@/components/dday/Dday";
 import { Slide, ToastContainer } from "react-toastify";
-import { IMAGE_INFINITY_FILM } from "@/constants/constant";
+import { IMAGE_INFINITY_FILM_1, IMAGE_INFINITY_FILM_2, IMAGE_INFINITY_FILM_3 } from "@/constants/constant";
 import { convertGoogleImage } from "@/utils/imageUtil";
+import LottieAnimation from "@/components/common/lottie/SoundLottie/SoundLottie";
 
 export default function InvitationPage() {
   const modulesRef = useRef<HTMLDivElement[]>([]);
@@ -68,6 +69,7 @@ export default function InvitationPage() {
   return (
     <>
       <div className="relative mx-auto max-w-[480px] min-w-[320px] w-full min-h-screen overflow-hidden">
+        <LottieAnimation />
         <div
           className="fade"
           ref={(el) => {
@@ -115,9 +117,21 @@ export default function InvitationPage() {
           }}
         >
           <Title message="갤러리" />
-          <PhotoGallery images={IMAGE_INFINITY_FILM.slice(0, 7).map((image) => convertGoogleImage(image))} />
-          <PhotoGallery images={IMAGE_INFINITY_FILM.slice(0, 7).map((image) => convertGoogleImage(image))} />
-          <PhotoGallery images={IMAGE_INFINITY_FILM.slice(0, 7).map((image) => convertGoogleImage(image))} />
+          <PhotoGallery
+            images={IMAGE_INFINITY_FILM_1.slice(0, IMAGE_INFINITY_FILM_1.length).map((image) =>
+              convertGoogleImage(image)
+            )}
+          />
+          <PhotoGallery
+            images={IMAGE_INFINITY_FILM_2.slice(0, IMAGE_INFINITY_FILM_2.length).map((image) =>
+              convertGoogleImage(image)
+            )}
+          />
+          <PhotoGallery
+            images={IMAGE_INFINITY_FILM_3.slice(0, IMAGE_INFINITY_FILM_3.length).map((image) =>
+              convertGoogleImage(image)
+            )}
+          />
         </div>
         <div
           className="fade"
@@ -127,7 +141,6 @@ export default function InvitationPage() {
         >
           <Maeum />
         </div>
-
         <div
           className="fade"
           ref={(el) => {

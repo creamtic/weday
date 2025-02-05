@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Yeon_Sung, Dongle } from "next/font/google";
+import { Yeon_Sung, Dongle, Gowun_Dodum } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 import { IMAGE_OGP } from "@/constants/constant";
@@ -13,6 +13,11 @@ const yeonSung = Yeon_Sung({
 const dongle = Dongle({
   subsets: ["latin"],
   weight: ["300", "400", "700"],
+});
+
+const gowunDodum = Gowun_Dodum({
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -44,7 +49,7 @@ export default function RootLayout({
       <Head>
         <link href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" rel="stylesheet" />
       </Head>
-      <body className={`${yeonSung.className} ${dongle.className}`}>{children}</body>
+      <body className={`${gowunDodum.className} ${yeonSung.className} ${dongle.className}`}>{children}</body>
     </html>
   );
 }

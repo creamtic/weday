@@ -3,8 +3,8 @@
   border: none;
   padding: 0 50px;
   scale: 0.9;
-  font-family: Dongle;
-  font-size: 1.8rem;
+  font-family: Gowun Dodum;
+  font-size: 1.3rem;
 }
 
 .react-calendar__tile {
@@ -31,8 +31,8 @@
 }
 
 .react-calendar__tile abbr {
-  font-size: 1.6rem;
-  padding: 5px 12px;
+  font-size: 1.1rem;
+  padding: 7px 10px;
 }
 .react-calendar__tile.selected {
   color: #ff8a74;

@@ -11,15 +11,15 @@ const customStyles = {
     left: "50%",
     right: "auto",
     bottom: "auto",
-    transform: "translate(-50%, -50%)",
+    transform: "translate(-50%, -60%)",
     padding: "0",
     border: "none",
     background: "none",
     overflow: "visible",
   },
   overlay: {
-    backgroundColor: "rgba(0, 0, 0, 0.7)", // 어두운 색의 오버레이
-    backdropFilter: "blur(5px)", // 배경 블러 처리
+    backgroundColor: "rgba(0, 0, 0, 0.7)",
+    backdropFilter: "blur(5px)",
   },
 };
 
@@ -64,7 +64,7 @@ function PhotoGallery({ images = [] }: PhotoGalleryProps) {
       <Modal isOpen={selectedImageIndex !== null} onRequestClose={closeModal} style={customStyles} ariaHideApp={false}>
         <div className="modal-container">
           <div ref={emblaRef}>
-            <div className="carousel-container">
+            <div className="carousel-container items-center">
               {images.map((image, index) => (
                 <div key={index} className="carousel-item">
                   <img src={image} alt={`carousel-image-${index}`} className="carousel-image" />
@@ -87,7 +87,7 @@ function PhotoGallery({ images = [] }: PhotoGalleryProps) {
           <button
             className="close-button"
             onClick={closeModal}
-            style={{ fontFamily: `${CUTE_FONT}`, fontSize: "1.3rem" }}
+            style={{ fontFamily: `${CUTE_FONT}`, fontSize: "1rem" }}
           >
             닫기
           </button>

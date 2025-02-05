@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Navi() {
   return (
-    <div className="flex flex-row justify-between items-center py-4 border border-opacity-70 w-[360px] text-xl">
+    <div className="flex flex-row justify-between items-center py-4 border border-opacity-70 w-[360px] text-sm">
       <div className="flex justify-center items-center w-1/3">
         <a href={`${T_MAP_URI}`} target="_blank" className="flex flex-row justify-center items-center cursor-pointer">
           <IconImage imageUrl={convertGoogleImage(IMAGE_MAP.tMap)} />
