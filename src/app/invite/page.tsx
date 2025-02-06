@@ -15,6 +15,7 @@ import { IMAGE_INFINITY_FILM_1, IMAGE_INFINITY_FILM_2, IMAGE_INFINITY_FILM_3 } f
 import { convertGoogleImage } from "@/utils/imageUtil";
 import SoundLottie from "@/components/common/lottie/SoundLottie/SoundLottie";
 import VerticalDivider from "@/components/common/divider/VerticalDivider";
+import IntroText from "@/components/invite/Intro/IntroText";
 
 export default function InvitationPage() {
   const modulesRef = useRef<HTMLDivElement[]>([]);
@@ -50,14 +51,11 @@ export default function InvitationPage() {
             if (scrollDirection === "down") {
               element.classList.add("fade-out");
               element.classList.remove("fade-in");
-            } else if (scrollDirection === "up" && index > 0) {
-              element.classList.add("fade-out");
-              element.classList.remove("fade-in");
             }
           }
         });
       },
-      { threshold: 0.1 } // 10%가 보일 때 트리거
+      { threshold: 0.1 }
     );
 
     modulesRef.current.forEach((module) => observer.observe(module));
@@ -85,20 +83,7 @@ export default function InvitationPage() {
             if (el) modulesRef.current.push(el);
           }}
         >
-          <div className="flex flex-col items-center gap-3 my-6 border rounded-xl py-10 mx-10">
-            <div className="flex gap-2 justify-center items-center text-[1.6rem] text-amber-500 text-opacity-60">
-              <p className=" font-serif">KWANWOO</p>
-              <p className=" font-serif">&</p>
-              <p className=" font-serif">SERAN</p>
-            </div>
-            <div className=" w-[10vh] h-[2px] bg-gray-950 opacity-20"></div>
-            <div className="text-center text-gray-950 text-opacity-60">
-              <p className="text-md font-bold ">2025. 05. 17. Sat, 12:50 PM</p>
-              <br></br>
-              <p className=" text-md font-bold ">호텔수성 수성스퀘어</p>
-              <p className=" text-md font-bold ">3층 피오니홀</p>
-            </div>
-          </div>
+          <IntroText />
         </div>
 
         <div
