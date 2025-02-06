@@ -9,7 +9,7 @@ const Title = ({ message }: TitleProps) => {
   return (
     <>
       <div
-        className="flex items-center justify-center pt-10 pb-4 px-4 sm:px-6 md:px-8 text-rose-400 text-opacity-70 text-[1.2rem] font-bold"
+        className="flex items-center justify-center pt-10 pb-4 px-4 sm:px-6 md:px-8 text-yellow-500 text-opacity-60 text-[1.2rem] font-bold"
         style={{ fontFamily: `${DEFAULT_FONT}` }}
       >
         {message}
