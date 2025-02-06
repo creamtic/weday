@@ -1,18 +1,25 @@
-import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
+import Lottie from "react-lottie";
 import checkLottie from "./check_lottie.json";
-const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
-const CheckLottie = () => {
+const CheckLottieComponent = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return null;
+  }
+
   const options = {
-    loop: false,
-    autoplay: true,
     animationData: checkLottie,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
+    loop: true,
+    autoplay: true,
   };
 
   return <Lottie options={options} height={30} width={30} />;
 };
 
-export default CheckLottie;
+export default CheckLottieComponent;
