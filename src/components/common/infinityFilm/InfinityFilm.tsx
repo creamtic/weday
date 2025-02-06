@@ -6,7 +6,7 @@ interface InfinityFilmProps {
   onImageClick: (index: number) => void;
 }
 
-const InfinityFilm: React.FC<InfinityFilmProps> = ({ images, onImageClick }) => {
+const InfinityFilm = ({ images, onImageClick }: InfinityFilmProps) => {
   return (
     <div className="view">
       <ul className="slide">

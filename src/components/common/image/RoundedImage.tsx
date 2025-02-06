@@ -5,7 +5,7 @@ type ContentProps = {
   imageUrl: string;
 };
 
-const RoundedImage: React.FC<ContentProps> = ({ imageUrl }) => {
+const RoundedImage = ({ imageUrl }: ContentProps) => {
   return (
     <div className="relative w-[368px] h-[280px] shadow-md rounded-xl overflow-hidden">
       <Image src={imageUrl} alt="🤵👰" layout="fill" objectFit="cover" />

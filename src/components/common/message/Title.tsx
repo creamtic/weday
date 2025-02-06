@@ -5,11 +5,11 @@ type TitleProps = {
   message: string;
 };
 
-const Title: React.FC<TitleProps> = ({ message }) => {
+const Title = ({ message }: TitleProps) => {
   return (
     <>
       <div
-        className="flex items-center justify-center pt-10 pb-4 px-4 sm:px-6 md:px-8 text-rose-400 text-opacity-70 text-[1.5rem]"
+        className="flex items-center justify-center pt-10 pb-4 px-4 sm:px-6 md:px-8 text-rose-400 text-opacity-70 text-[1.2rem] font-bold"
         style={{ fontFamily: `${DEFAULT_FONT}` }}
       >
         {message}

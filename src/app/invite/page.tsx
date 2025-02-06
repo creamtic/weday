@@ -13,7 +13,8 @@ import Dday from "@/components/dday/Dday";
 import { Slide, ToastContainer } from "react-toastify";
 import { IMAGE_INFINITY_FILM_1, IMAGE_INFINITY_FILM_2, IMAGE_INFINITY_FILM_3 } from "@/constants/constant";
 import { convertGoogleImage } from "@/utils/imageUtil";
-import LottieAnimation from "@/components/common/lottie/SoundLottie/SoundLottie";
+import SoundLottie from "@/components/common/lottie/SoundLottie/SoundLottie";
+import VerticalDivider from "@/components/common/divider/VerticalDivider";
 
 export default function InvitationPage() {
   const modulesRef = useRef<HTMLDivElement[]>([]);
@@ -69,7 +70,7 @@ export default function InvitationPage() {
   return (
     <>
       <div className="relative mx-auto max-w-[480px] min-w-[320px] w-full min-h-screen overflow-hidden">
-        <LottieAnimation />
+        <SoundLottie />
         <div
           className="fade"
           ref={(el) => {
@@ -78,6 +79,26 @@ export default function InvitationPage() {
         >
           <Intro />
         </div>
+        <div
+          className="fade"
+          ref={(el) => {
+            if (el) modulesRef.current.push(el);
+          }}
+        >
+          <div className="flex flex-col items-center gap-3 my-6 border rounded-xl py-10 px-10">
+            <div className="flex gap-2 justify-center items-center text-[2rem] text-gray-950 text-opacity-60">
+              <p className=" font-serif">KWANWOO</p>
+              <p className=" font-serif">&</p>
+              <p className=" font-serif">SERAN</p>
+            </div>
+            <div className=" w-[10vh] h-[2px] bg-gray-950 opacity-20"></div>
+            <div className="text-center text-gray-950 text-opacity-60">
+              <p className="text-md font-bold ">2025. 05. 17. Sat, 12:50 PM</p>
+              <p className=" text-md font-bold ">호텔수성 피오니홀</p>
+            </div>
+          </div>
+        </div>
+
         <div
           className="fade"
           ref={(el) => {
@@ -147,6 +168,7 @@ export default function InvitationPage() {
             if (el) modulesRef.current.push(el);
           }}
         >
+          <VerticalDivider />
           <Dday />
         </div>
       </div>

@@ -1,12 +1,15 @@
-.fade-in {
-  animation: fadeIn 1s ease-in-out;
+.lottie-fade-in {
+  animation: fadeIn 2s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  66% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }

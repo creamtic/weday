@@ -5,7 +5,7 @@ type ContentProps = {
   imageUrl: string;
 };
 
-const IconImage: React.FC<ContentProps> = ({ imageUrl }) => {
+const IconImage = ({ imageUrl }: ContentProps) => {
   return (
     <div className="relative w-[1.2rem] h-[1.2rem] overflow-hidden">
       <Image src={imageUrl} alt="🤵👰" layout="fill" objectFit="cover" />
