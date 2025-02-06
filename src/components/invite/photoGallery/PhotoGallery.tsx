@@ -35,14 +35,26 @@ function PhotoGallery({ images = [] }: PhotoGalleryProps) {
 
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, startIndex: selectedImageIndex! });
   const [selectedDot, setSelectedDot] = useState<number>(0);
+  const [modalAnimationClass, setModalAnimationClass] = useState<string>("");
 
   useEffect(() => {
-    if (emblaApi) {
-      emblaApi.on("select", () => {
-        setSelectedDot(emblaApi.selectedScrollSnap());
-      });
+    if (selectedImageIndex !== null) {
+      setModalAnimationClass("modal-enter"); // 애니메이션 시작
+    } else {
+      setModalAnimationClass("modal-exit"); // 애니메이션 종료
     }
-  }, [emblaApi]);
+  }, [selectedImageIndex]);
+
+  useEffect(() => {
+    if (selectedImageIndex === null) {
+      return;
+    }
+
+    // 애니메이션 종료 후 모달 닫기
+    if (modalAnimationClass === "modal-exit") {
+      setTimeout(() => setSelectedImageIndex(null), 800); // 애니메이션 시간만큼 기다린 후 모달 닫기
+    }
+  }, [modalAnimationClass]);
 
   const handleDotClick = (index: number) => {
     setSelectedDot(index % images.length);
@@ -62,7 +74,7 @@ function PhotoGallery({ images = [] }: PhotoGalleryProps) {
       <InfinityFilm images={images} onImageClick={handleImageClick} />
 
       <Modal isOpen={selectedImageIndex !== null} onRequestClose={closeModal} style={customStyles} ariaHideApp={false}>
-        <div className="modal-container">
+        <div className={`modal-container ${modalAnimationClass}`}>
           <div ref={emblaRef}>
             <div className="carousel-container items-center">
               {images.map((image, index) => (

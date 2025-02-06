@@ -1,0 +1,25 @@
+@keyframes invitationModalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes invitationModalfadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.modal-enter {
+  animation: invitationModalFadeIn 0.7s ease-out forwards;
+}
+
+.modal-exit {
+  animation: invitationModalfadeOut 0.7s ease-out forwards;
+}
