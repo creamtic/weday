@@ -51,6 +51,9 @@ export default function InvitationPage() {
             if (scrollDirection === "down") {
               element.classList.add("fade-out");
               element.classList.remove("fade-in");
+            } else if (scrollDirection === "up" && index > 0) {
+              element.classList.add("fade-out");
+              element.classList.remove("fade-in");
             }
           }
         });
