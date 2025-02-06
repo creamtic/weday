@@ -86,7 +86,7 @@ export default function InvitationPage() {
           }}
         >
           <div className="flex flex-col items-center gap-3 my-6 border rounded-xl py-10 mx-10">
-            <div className="flex gap-2 justify-center items-center text-[1.6rem] text-amber-600 text-opacity-60 ">
+            <div className="flex gap-2 justify-center items-center text-[1.6rem] text-amber-600 text-opacity-60">
               <p className=" font-serif">KWANWOO</p>
               <p className=" font-serif">&</p>
               <p className=" font-serif">SERAN</p>
@@ -185,6 +185,7 @@ export default function InvitationPage() {
         pauseOnFocusLoss
         draggable
         pauseOnHover
+        closeButton={false}
         theme="light"
         transition={Slide}
       />

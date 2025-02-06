@@ -46,4 +46,6 @@ body::-webkit-scrollbar {
   border-radius: 1rem;
   margin-top: 5px;
   width: 300px;
+  background: #828282cc;
+  color: white;
 }
