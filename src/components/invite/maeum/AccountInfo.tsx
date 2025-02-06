@@ -45,7 +45,7 @@ export default function AccountInfo({ type, name, account }: AccountInfoProps) {
       <div className="flex justify-center items-center gap-1 w-full text-black">
         <span className="text-xs mt-[4px]">{type}</span>
         <span className="text-md font-bold">{name}</span>
-        <span className="text-sm ml-auto font-sans text-[0.8rem]">{account}</span>
+        <span className="text-sm sm:text-sm2 ml-auto font-sans ">{account}</span>
         <div className="px-1 py-2 cursor-pointer" onClick={copyToClipboard}>
           <IoCopyOutline />
         </div>

@@ -22,9 +22,11 @@ export default function Maeum() {
     <div className="flex flex-col justify-center items-center py-4 px-10">
       <Title message="마음 전해주실 곳" />
       <Content
-        message="저희 두 사람의\n 새로운 시작을 축복해 주시면 \n
-        따뜻한 마음 간직하며\n 행복하게 살겠습니다. \n\n
-        다시 한번 감사의 말씀 올립니다.\n"
+        message="저희 두 사람의\n
+        새로운 시작을 축복해 주시면\n
+        따뜻한 마음 간직하며\n
+        행복하게 살겠습니다.\n\n
+        다시 한번 감사의 말씀 올립니다."
       />
 
       <div className="flex items-center justify-center pt-10 pb-1 px-4 sm:px-6 md:px-8 text-blue-400 text-opacity-70 text-xl">
