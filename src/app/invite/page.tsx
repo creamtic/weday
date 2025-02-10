@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Intro from "@/components/invite/Intro/Intro";
 import HallDetail from "@/components/invite/hallDetail/HallDetail";
 import Invitation from "@/components/invite/invitation/Invitation";
