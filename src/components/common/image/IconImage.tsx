@@ -8,7 +8,7 @@ type ContentProps = {
 const IconImage = ({ imageUrl }: ContentProps) => {
   return (
     <div className="relative w-[1.2rem] h-[1.2rem] overflow-hidden">
-      <Image src={imageUrl} alt="🤵👰" layout="fill" objectFit="cover" />
+      <Image src={imageUrl} alt="🤵👰" fill style={{ objectFit: "cover" }} sizes="100vw" className="w-full h-auto" />
     </div>
   );
 };

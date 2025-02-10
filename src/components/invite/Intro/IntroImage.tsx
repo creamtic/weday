@@ -5,13 +5,22 @@ import Image from "next/image";
 export default function IntroImage({ url }: { url: string }) {
   return (
     <div className="relative mx-auto min-h-screen overflow-hidden">
-      <Image src={url} alt="🤵👰" layout="fill" objectFit="cover" priority />
+      <Image
+        src={url}
+        alt="🤵👰"
+        fill
+        priority
+        style={{ objectFit: "cover" }}
+        sizes="100vw"
+        className="w-full h-auto"
+      />
       <Image
         src={convertGoogleImage(IMAGE_INTRO.flowerEffect)}
         alt="🌸"
         layout="fill"
-        objectFit="cover"
-        className="scale-x-[-1]"
+        className="scale-x-[-1] w-full h-auto"
+        style={{ objectFit: "cover" }}
+        sizes="100vw"
       />
     </div>
   );

@@ -15,7 +15,14 @@ const Dday = () => {
       <div className="p-3" />
 
       <div className="relative w-[368px] h-[600px] shadow-md rounded-xl overflow-hidden">
-        <Image src={convertGoogleImage(IMAGE_D_DAY)} alt="🤵👰" layout="fill" objectFit="cover" />
+        <Image
+          src={convertGoogleImage(IMAGE_D_DAY)}
+          alt="🤵👰"
+          fill
+          style={{ objectFit: "cover" }}
+          sizes="100vw"
+          className="w-full h-auto"
+        />
       </div>
     </div>
   );
