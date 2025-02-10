@@ -23,7 +23,7 @@ export default function InvitationPage() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry, index) => {
+        entries.forEach((entry) => {
           const element = entry.target as HTMLElement;
 
           if (entry.isIntersecting) {
