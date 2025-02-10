@@ -19,24 +19,6 @@ import IntroText from "@/components/invite/Intro/IntroText";
 
 export default function InvitationPage() {
   const modulesRef = useRef<HTMLDivElement[]>([]);
-  const [scrollDirection, setScrollDirection] = useState("down");
-
-  useEffect(() => {
-    let lastScrollTop = 0;
-
-    // 스크롤 방향 감지
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setScrollDirection(scrollTop > lastScrollTop ? "down" : "up");
-      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -47,14 +29,6 @@ export default function InvitationPage() {
           if (entry.isIntersecting) {
             element.classList.add("fade-in");
             element.classList.remove("fade-out");
-          } else {
-            if (scrollDirection === "down") {
-              element.classList.add("fade-out");
-              element.classList.remove("fade-in");
-            } else if (scrollDirection === "up" && index > 0) {
-              element.classList.add("fade-out");
-              element.classList.remove("fade-in");
-            }
           }
         });
       },
@@ -66,7 +40,7 @@ export default function InvitationPage() {
     return () => {
       modulesRef.current.forEach((module) => observer.unobserve(module));
     };
-  }, [scrollDirection]);
+  }, []);
 
   return (
     <>
