@@ -1,9 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  devIndicators: {
-    autoPrerender: false,
-  },
   images: {
     remotePatterns: [
       {
@@ -11,10 +8,6 @@ const nextConfig: NextConfig = {
         hostname: "lh3.googleusercontent.com",
       },
     ],
-  },
-  // TODO: REMOVE this ignore code
-  typescript: {
-    ignoreBuildErrors: true,
   },
   async redirects() {
     return [
