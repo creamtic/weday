@@ -29,8 +29,23 @@ export default function Location() {
             <span className="pr-1">🚌</span>
             <div className="flex flex-col">
               <span>호텔수성 앞 하차 (401, 410-1)</span>
-              <span>신랑측 버스 - </span>
-              <span>신부측 버스 - </span>
+            </div>
+          </div>
+
+          <div className="flex items-start pt-3">
+            <span className="pr-1">🤵</span>
+            <div className="flex flex-col">
+              <span>신랑측 전세 버스</span>
+              <span>추후 공지</span>
+            </div>
+          </div>
+
+          <div className="flex items-start pt-3">
+            <span className="pr-1">👰</span>
+            <div className="flex flex-col">
+              <span>신부측 전세 버스</span>
+              <span>출발 - 화산동 행정복지센터 오전 8시</span>
+              <span>귀가 - 호텔수성 수성스퀘어 오후 3시</span>
             </div>
           </div>
         </div>
