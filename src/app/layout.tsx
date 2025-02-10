@@ -48,6 +48,7 @@ export default function RootLayout({
     <html lang="ko">
       <Head>
         <link href="https://hangeul.pstatic.net/hangeul_static/css/maru-buri.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
       </Head>
       <body className={`${gowunDodum.className} ${yeonSung.className} ${dongle.className}`}>{children}</body>
     </html>
