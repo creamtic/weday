@@ -8,7 +8,7 @@ import { convertGoogleImage } from "@/utils/imageUtil";
 
 export default function HallDetail() {
   const date = WEDDING_DATE;
-  const location = "호텔수성 수성스퀘어 피오니홀";
+  const location = "호텔수성 수성스퀘어 3층 피오니홀";
 
   return (
     <div className="flex flex-col items-center justify-center py-4 px-4 sm:px-6 md:px-8">
