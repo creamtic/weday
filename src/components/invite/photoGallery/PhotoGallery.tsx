@@ -29,32 +29,38 @@ type PhotoGalleryProps = {
 
 function PhotoGallery({ images = [] }: PhotoGalleryProps) {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+  const [selectedDot, setSelectedDot] = useState<number>(0);
+  const [modalAnimationClass, setModalAnimationClass] = useState<string>("");
+
   const closeModal = () => {
     setSelectedImageIndex(null);
   };
 
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, startIndex: selectedImageIndex! });
-  const [selectedDot, setSelectedDot] = useState<number>(0);
-  const [modalAnimationClass, setModalAnimationClass] = useState<string>("");
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    startIndex: selectedImageIndex || 0,
+  });
+
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    const onSelect = () => {
+      const selectedIndex = emblaApi.selectedScrollSnap();
+      setSelectedDot(selectedIndex);
+    };
+
+    emblaApi.on("select", onSelect);
+
+    return () => {
+      void emblaApi.off("select", onSelect);
+    };
+  }, [emblaApi]);
 
   useEffect(() => {
     if (selectedImageIndex !== null) {
-      setModalAnimationClass("modal-enter"); // 애니메이션 시작
-    } else {
-      setModalAnimationClass("modal-exit"); // 애니메이션 종료
+      setModalAnimationClass("modal-enter");
     }
   }, [selectedImageIndex]);
-
-  useEffect(() => {
-    if (selectedImageIndex === null) {
-      return;
-    }
-
-    // 애니메이션 종료 후 모달 닫기
-    if (modalAnimationClass === "modal-exit") {
-      setTimeout(() => setSelectedImageIndex(null), 800); // 애니메이션 시간만큼 기다린 후 모달 닫기
-    }
-  }, [modalAnimationClass]);
 
   const handleDotClick = (index: number) => {
     setSelectedDot(index % images.length);
