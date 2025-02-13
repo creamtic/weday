@@ -10,11 +10,11 @@ export const GROOM_ACCOUNT = "신한 110-334-866541";
 
 export const GROOM_FATHER_NAME = "고태영";
 export const GROOM_FATHER_MOBILE = "01035075887";
-export const GROOM_FATHER_ACCOUNT = "iM 508-12-893286-3";
+export const GROOM_FATHER_ACCOUNT = "iM(대구) 508-12-893286-3";
 
 export const GROOM_MOTHER_NAME = "이숙이";
 export const GROOM_MOTHER_MOBILE = "01029759298";
-export const GROOM_MOTHER_ACCOUNT = "iM 227-07-008265-001";
+export const GROOM_MOTHER_ACCOUNT = "iM(대구) 227-07-008265-001";
 
 export const BRIDE_NAME = "이세란";
 export const BRIDE_MOBILE = "01097273147";
