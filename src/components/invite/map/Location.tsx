@@ -3,7 +3,7 @@ import { IoIosCall } from "react-icons/io";
 
 export default function Location() {
   return (
-    <div className="flex flex-col justify-center items-center border py-5 rounded-b-lg w-[360px]">
+    <div className="flex flex-col justify-center items-center border py-5 px-5 rounded-b-lg w-[360px]">
       <span className="text-[1.2rem]">대구 수성구 용학로 106-7</span>
       <div className="flex flex-col  justify-center items-center">
         <div className="flex justify-center items-center">
