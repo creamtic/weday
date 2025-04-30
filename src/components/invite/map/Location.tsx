@@ -36,7 +36,14 @@ export default function Location() {
             <span className="pr-1">🤵</span>
             <div className="flex flex-col">
               <span>신랑측 전세 버스</span>
-              <span>추후 공지</span>
+              <div className="flex flex-row">
+                <span>선탑자 연락하기</span>
+                <a href="tel:01026575008" className="ml-1 flex flex-col items-center justify-center">
+                  <IoIosCall className="text-lg text-green-300" />
+                </a>
+              </div>
+              <span>출발 - 삼성 정문주차타워 오전 8시 30분</span>
+              <span>귀가 - 호텔수성 수성스퀘어 오후 3시</span>
             </div>
           </div>
 
@@ -44,6 +51,12 @@ export default function Location() {
             <span className="pr-1">👰</span>
             <div className="flex flex-col">
               <span>신부측 전세 버스</span>
+              <div className="flex flex-row">
+                <span>선탑자 연락하기</span>
+                <a href="tel:01090584627" className="ml-1 flex flex-col items-center justify-center">
+                  <IoIosCall className="text-lg text-green-300" />
+                </a>
+              </div>
               <span>출발 - 화산동 행정복지센터 오전 8시</span>
               <span>귀가 - 호텔수성 수성스퀘어 오후 3시</span>
             </div>
